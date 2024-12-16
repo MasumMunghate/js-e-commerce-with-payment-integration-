@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/resitrationLogin.css" />
+    <!-- tostify js  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="user signinBx">
+          <div class="imgBx">
+            <img
+              src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS4zdRa9IcZfM_Jg_u-dzGz8Gj6Z5XDoFQU4UznKVD_sSD65cw3ugOFyCkgShQJCVdzQddAF9W0JGU0x04FefSo6_JfD4Q22l0ebQI91ZY"
+              alt=""
+            />
+          </div>
+          <div class="formBx">
+            <form action="" onsubmit="return false;">
+              <h2>Sign In</h2>
+              <input type="text" name="" placeholder="Username" id="loginUsername"/>
+              <p id="loginUser-error" class="error-msg"></p>
+              <input type="password" name="" placeholder="Password" id="loginpassword"/>
+              <p id="loginPassword-error" class="error-msg"></p>
+              <input type="submit" name="" value="Login" onclick="loginHandler()"/>
+              <p class="signup">
+                Don't have an account ?
+                <a href="#" onclick="toggleForm();">Sign Up.</a>
+              </p>
+            </form>
+          </div>
+        </div>
+        <div class="user signupBx">
+          <div class="formBx">
+            <form action="" onsubmit="return false;">
+              <h2>Create an account</h2>
+              <input type="text" name="" placeholder="Username" id="Username"/>
+              <p id="username-error" class="error-msg"></p>
+              <input type="email" name="" placeholder="Email Address" id="emailAddress"/>
+              <p id="email-error" class="error-msg"></p>
+              <input type="password" name="" placeholder="Create Password" id="password"/>
+              <p id="password-error" class="error-msg"></p>
+              <input type="password" name="" placeholder="Confirm Password" id="confirmPassword"/>
+              <p id="conformPassword-error" class="error-msg"></p>
+              <input type="submit" name="" value="Sign Up" onclick="registrationHandler()"/>
+              <p class="signup">
+                Already have an account ?
+                <a href="#" onclick="toggleForm();">Sign in.</a>
+              </p>
+            </form>
+          </div>
+          <div class="imgBx">
+            <img
+              src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTAax05sgNj9NMdDqiME5Ge95MKS1iIsAFSErDj22WRYPS3L9gWSMKUHKdAxgNd-7GcsWS_y25LQVe6OyXVyB0ae0lKTu-u819N3IPQlKbJ"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Tostify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<!-- Sweet alart -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/registrationLogin.js"></script>
+  </body>
+</html>
